@@ -1,34 +1,30 @@
-
 pipeline {
-  agent any
+    agent any
 
-  tools {
-    maven 'Maven3'
-  }
+    stages {
 
-  stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run Selenium Tests') {
+            steps {
+                sh 'mvn clean test'
+            }
+        }
+
+        stage('Publish Allure Report') {
+            steps {
+                allure results: [[path: 'target/allure-results']]
+            }
+        }
     }
 
-    stage('Build & Test') {
-      steps {
-        sh 'mvn clean test'
-      }
+    post {
+        always {
+            archiveArtifacts artifacts: 'target/**', allowEmptyArchive: true
+        }
     }
-
-    stage('Publish Allure Report') {
-      steps {
-        allure results: [[path: 'target/allure-results']]
-      }
-    }
-  }
-
-  post {
-    always {
-      archiveArtifacts artifacts: 'target/**', allowEmptyArchive: true
-    }
-  }
 }

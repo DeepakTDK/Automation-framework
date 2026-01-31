@@ -1,32 +1,23 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-import java.net.URL;
 
 public class DriverFactory {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void initDriver() {
-        try {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
 
-            driver.set(
-                    new RemoteWebDriver(
-                            new URL("http://selenium:4444/wd/hub"),
-                            options
-                    )
-            );
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
 
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to initialize RemoteWebDriver", e);
-        }
+        WebDriverManager.chromedriver().setup();
+        driver.set(new ChromeDriver(options));
     }
 
     public static WebDriver getDriver() {
