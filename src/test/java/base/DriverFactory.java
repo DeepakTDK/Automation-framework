@@ -19,7 +19,7 @@ public class DriverFactory {
 
             driver.set(
                     new RemoteWebDriver(
-                            new URL("http://localhost:4444/wd/hub"),
+                            new URL("http://selenium:4444/wd/hub"),
                             options
                     )
             );

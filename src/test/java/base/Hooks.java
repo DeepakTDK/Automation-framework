@@ -17,7 +17,7 @@ public class Hooks {
     @After
     public void tearDown(Scenario scenario) {
 
-        if (scenario.isFailed()) {
+        if (scenario.isFailed() && DriverFactory.getDriver() != null) {
             saveScreenshot();
         }
 
