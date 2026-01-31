@@ -1,8 +1,6 @@
 package base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -14,29 +12,20 @@ public class DriverFactory {
 
     public static void initDriver() {
         try {
-            String runMode = System.getProperty("runMode", "local");
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
 
-            if (runMode.equalsIgnoreCase("docker")) {
-
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless=new");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
-
-                driver.set(
-                        new RemoteWebDriver(
-                                new URL("http://localhost:4444/wd/hub"),
-                                options
-                        )
-                );
-
-            } else {
-                WebDriverManager.chromedriver().setup();
-                driver.set(new ChromeDriver());
-            }
+            driver.set(
+                    new RemoteWebDriver(
+                            new URL("http://localhost:4444/wd/hub"),
+                            options
+                    )
+            );
 
         } catch (Exception e) {
-            throw new RuntimeException("Failed to initialize WebDriver", e);
+            throw new RuntimeException("Failed to initialize RemoteWebDriver", e);
         }
     }
 
