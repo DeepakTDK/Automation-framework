@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Assertion Failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "Element Not Found",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*NoSuchElementException.*"
+  },
+  {
+    "name": "Timeout Issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*TimeoutException.*"
+  },
+  {
+    "name": "Environment Issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*WebDriverException.*"
+  }
+]

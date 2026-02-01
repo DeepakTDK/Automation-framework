@@ -1,0 +1,6 @@
+steps\UISteps.class
+base\Hooks.class
+pages\LoginPage.class
+runners\TestRunner.class
+pages\InventoryPage.class
+base\DriverFactory.class

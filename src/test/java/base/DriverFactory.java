@@ -7,27 +7,31 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory {
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static WebDriver driver;
 
-    public static void initDriver() {
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
+    public static WebDriver initDriver() {
 
         WebDriverManager.chromedriver().setup();
-        driver.set(new ChromeDriver(options));
+
+        ChromeOptions options = new ChromeOptions();
+
+        // COMMENT this line if you want UI browser
+        // options.addArguments("--headless=new");
+
+        options.addArguments("--start-maximized");
+
+        driver = new ChromeDriver(options);
+        return driver;
     }
 
     public static WebDriver getDriver() {
-        return driver.get();
+        return driver;
     }
 
     public static void quitDriver() {
-        if (driver.get() != null) {
-            driver.get().quit();
-            driver.remove();
+        if (driver != null) {
+            driver.quit();
+            driver = null;
         }
     }
 }

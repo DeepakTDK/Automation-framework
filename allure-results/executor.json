@@ -1,0 +1,8 @@
+{
+  "name": "Local Execution",
+  "type": "local",
+  "buildName": "Local Test Run",
+  "buildOrder": 1,
+  "url": "",
+  "buildUrl": ""
+}

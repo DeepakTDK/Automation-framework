@@ -1,11 +1,8 @@
 package base;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.qameta.allure.Attachment;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
 
 public class Hooks {
 
@@ -17,16 +14,17 @@ public class Hooks {
     @After
     public void tearDown(Scenario scenario) {
 
-        if (scenario.isFailed() && DriverFactory.getDriver() != null) {
-            saveScreenshot();
+        WebDriver driver = DriverFactory.getDriver();
+
+        if (scenario.isFailed() && driver != null) {
+            saveScreenshot(driver);
         }
 
         DriverFactory.quitDriver();
     }
 
     @Attachment(value = "Failure Screenshot", type = "image/png")
-    public byte[] saveScreenshot() {
-        return ((TakesScreenshot) DriverFactory.getDriver())
-                .getScreenshotAs(OutputType.BYTES);
+    public byte[] saveScreenshot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
