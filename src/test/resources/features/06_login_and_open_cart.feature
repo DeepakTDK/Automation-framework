@@ -1,7 +1,5 @@
+Feature: Login and open cart
 
-Feature: UI Test
-
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Login and open cart
+  Given user logs in and opens cart
+  Then cart page is displayed

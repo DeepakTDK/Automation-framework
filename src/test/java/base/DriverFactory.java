@@ -5,22 +5,39 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DriverFactory {
 
     private static WebDriver driver;
 
     public static WebDriver initDriver() {
 
-        WebDriverManager.chromedriver().setup();
+        if (driver == null) {
 
-        ChromeOptions options = new ChromeOptions();
+            WebDriverManager.chromedriver().setup();
 
-        // COMMENT this line if you want UI browser
-        // options.addArguments("--headless=new");
+            ChromeOptions options = new ChromeOptions();
 
-        options.addArguments("--start-maximized");
+            // Window & stability
+            options.addArguments("--start-maximized");
+            options.addArguments("--disable-notifications");
+            options.addArguments("--disable-infobars");
+            options.addArguments("--disable-save-password-bubble");
+            options.addArguments("--disable-password-manager-reauthentication");
 
-        driver = new ChromeDriver(options);
+            // Disable password manager & leak detection
+            Map<String, Object> prefs = new HashMap<>();
+            prefs.put("credentials_enable_service", false);
+            prefs.put("profile.password_manager_enabled", false);
+            prefs.put("profile.password_manager_leak_detection", false);
+
+            options.setExperimentalOption("prefs", prefs);
+
+            driver = new ChromeDriver(options);
+        }
+
         return driver;
     }
 

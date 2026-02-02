@@ -1,6 +1,16 @@
 E:\automation-framework\src\test\java\base\DriverFactory.java
+E:\automation-framework\src\test\java\base\DriverUtils.java
 E:\automation-framework\src\test\java\base\Hooks.java
+E:\automation-framework\src\test\java\pages\CartPage.java
 E:\automation-framework\src\test\java\pages\InventoryPage.java
 E:\automation-framework\src\test\java\pages\LoginPage.java
 E:\automation-framework\src\test\java\runners\TestRunner.java
-E:\automation-framework\src\test\java\steps\UISteps.java
+E:\automation-framework\src\test\java\steps\AddToCartSteps.java
+E:\automation-framework\src\test\java\steps\BasicFlowSteps.java
+E:\automation-framework\src\test\java\steps\CartNavigationSteps.java
+E:\automation-framework\src\test\java\steps\EndToEndSteps.java
+E:\automation-framework\src\test\java\steps\InventorySteps.java
+E:\automation-framework\src\test\java\steps\InventoryVisibilitySteps.java
+E:\automation-framework\src\test\java\steps\LoginAndAddSteps.java
+E:\automation-framework\src\test\java\steps\LoginAndOpenCartSteps.java
+E:\automation-framework\src\test\java\steps\LoginSteps.java

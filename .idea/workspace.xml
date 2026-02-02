@@ -8,6 +8,54 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/InventoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/UISteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/01_login_valid.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/01_login_valid.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/02_inventory_display.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/02_inventory_display.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/03_add_to_cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/03_add_to_cart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/04_open_cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/04_open_cart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/05_login_and_add.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/05_login_and_add.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/06_login_and_open_cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/06_login_and_open_cart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/07_inventory_visibility.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/07_inventory_visibility.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/08_cart_navigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/08_cart_navigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/09_basic_flow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/09_basic_flow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/10_end_to_end.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/10_end_to_end.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0787b2d7-ecf5-4165-976d-98ebb887741a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/11c456c9-fe9f-4ba8-a390-8cc86f6baa52-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1e0f7606-d0bf-4f5b-ab6b-cd76db5a49de-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4cdc462e-a74b-45e9-8f0a-f0c525ae435d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/67d80381-f8a5-4a59-90b7-f36f366838e5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6c7cfeb9-31d8-4a51-a01e-1e0d5ad04c91-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6fd2560d-b01e-46ac-9d18-369ec6529d05-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/78f2446e-5f69-48c0-9854-d0866f7c6be6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8f5a086b-05f7-4988-9498-f27f1318a36a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/936d3829-fb35-40c7-8917-4862940d1885-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/94a4612b-9ca5-4071-aee3-ff193161e7a8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9ef68bc3-6631-4e9a-b205-7d934da2beef-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9f478822-b124-49b8-a21a-b7bd05b3e9d5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a49be8f1-9925-4b41-ba42-01265e828f68-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ba9500c3-6510-4e4d-a6eb-85f2b2fefa55-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cc9d1eff-f94a-4a99-b0dd-6f3199c94ff4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f2575d6e-2dbb-467b-8db1-9d418094bf01-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f742277e-d549-4d16-bad0-abc727876d95-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fcdcd068-103a-40e0-83f9-4a8fd5f4fdc3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fe01c927-884b-47fd-aaca-6b930c9fb951-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-02-01T13-14-12_268.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runners.TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runners.TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/InventoryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/InventoryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/UISteps.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +77,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="3914W0ghOGJIrSbsnj5SEWaE3qF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

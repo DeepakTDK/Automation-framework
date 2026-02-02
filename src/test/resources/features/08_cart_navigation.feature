@@ -1,7 +1,7 @@
+Feature: Cart navigation
 
-Feature: UI Test
-
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Navigate to cart
+  Given user is on login page
+  When user logs in with valid credentials
+  And user navigates to cart
+  Then cart page is displayed

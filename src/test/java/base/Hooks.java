@@ -13,13 +13,9 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
-
-        WebDriver driver = DriverFactory.getDriver();
-
-        if (scenario.isFailed() && driver != null) {
-            saveScreenshot(driver);
+        if (scenario.isFailed()) {
+            saveScreenshot(DriverFactory.getDriver());
         }
-
         DriverFactory.quitDriver();
     }
 

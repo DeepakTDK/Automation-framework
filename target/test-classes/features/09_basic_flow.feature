@@ -1,7 +1,5 @@
+Feature: Basic flow
 
-Feature: UI Test
-
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Basic user flow
+  Given user completes basic flow
+  Then inventory page is displayed

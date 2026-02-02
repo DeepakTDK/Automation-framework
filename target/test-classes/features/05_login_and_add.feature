@@ -1,7 +1,5 @@
+Feature: Login and add
 
-Feature: UI Test
-
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Login and add product
+  Given user logs in and adds product to cart
+  Then inventory page is displayed

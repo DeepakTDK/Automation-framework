@@ -1,7 +1,6 @@
+Feature: Inventory visibility
 
-Feature: UI Test
-
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Inventory items are visible
+  Given user is on login page
+  When user logs in with valid credentials
+  Then all inventory items should be visible

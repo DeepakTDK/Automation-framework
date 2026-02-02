@@ -1,7 +1,5 @@
 
-Feature: UI Test
+Feature: End to end flow
 
-  Scenario: UI scenario
-    Given user is on login page
-    When user logs in with valid credentials
-    Then inventory page is displayed
+Scenario: Complete end to end flow
+  Given user completes end to end flow
